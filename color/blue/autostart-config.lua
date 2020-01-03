@@ -33,7 +33,7 @@ function autostart.run()
 	-- apps
 	awful.spawn.with_shell("gpaste-client start")
 	--awful.spawn.with_shell("transmission-gtk -m")
-	--awful.spawn.with_shell("pragha --toggle_view")
+	awful.spawn.with_shell("pragha --toggle_view")
   -- awful.spawn.with_shell("telegram-desktop", {
   --                          floating  = true,
   --                          tag       = mouse.screen.selected_tag,
@@ -42,10 +42,10 @@ function autostart.run()
   --awful.spawn.with_shell("skypeforlinux")
   --spawn_once("skypeforlinux", "Skype", screen[1].tags[5])
 
-  awful.spawn.with_shell("firefox", {tag=root.tags()[4]})
+  --awful.spawn.with_shell("firefox", {tag=root.tags()[4]})
   --spawn_once("firefox", "Firefox", screen[1].tags[2])
-  
-  awful.spawn.with_shell("kitty", "Term")
+
+  awful.spawn.with_shell("kitty ~/tsession.sh")
 end
 
 -- Read and commads from file and spawn them
