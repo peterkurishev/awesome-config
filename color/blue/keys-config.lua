@@ -761,15 +761,15 @@ function hotkeys:init(args)
 			{ description = "Show/hide widget", group = "Audio player" }
 		},
 		{
-			{}, "XF86AudioPlay", function() redflat.float.player:action("PlayPause") end,
+			{ env.mod }, "/", function() redflat.float.player:action("PlayPause") end,
 			{ description = "Play/Pause track", group = "Audio player" }
 		},
 		{
-			{}, "XF86AudioNext", function() redflat.float.player:action("Next") end,
+			{ env.mod }, ".", function() redflat.float.player:action("Next") end,
 			{ description = "Next track", group = "Audio player" }
 		},
 		{
-			{}, "XF86AudioPrev", function() redflat.float.player:action("Previous") end,
+			{ env.mod }, ",", function() redflat.float.player:action("Previous") end,
 			{ description = "Previous track", group = "Audio player" }
 		},
 
