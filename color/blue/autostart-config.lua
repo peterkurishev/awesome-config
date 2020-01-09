@@ -45,7 +45,7 @@ function autostart.run()
   --awful.spawn.with_shell("firefox", {tag=root.tags()[4]})
   --spawn_once("firefox", "Firefox", screen[1].tags[2])
 
-  awful.spawn.with_shell("kitty ~/tsession.sh")
+  awful.spawn.with_shell("kitty")
 end
 
 -- Read and commads from file and spawn them
